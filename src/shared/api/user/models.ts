@@ -13,6 +13,11 @@ export interface LoginEmailDto {
   password: string
 }
 
+export interface PasswordsDto {
+  password: string
+  confirmPassword: string
+}
+
 export interface AuthResponse {
   token: string
 }

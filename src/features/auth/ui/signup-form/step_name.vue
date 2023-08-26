@@ -19,7 +19,6 @@ const emit = defineEmits<Emits>()
 
 const authDataStepName = reactive<AuthDto_Main>({
   firstname: "", // Имя
-  secondname: "", // Фамилия
   lastname: "", // Отчество
   mail: "",
   phone: ""
@@ -27,13 +26,12 @@ const authDataStepName = reactive<AuthDto_Main>({
 
 const rules_name = {
   firstname: { required: helpers.withMessage("Это поле не может быть пустым", required) },
-  secondname: { required: helpers.withMessage("Это поле не может быть пустым", required) },
-  lastname: {}
+  lastname: { required: helpers.withMessage("Это поле не может быть пустым", required) }
 }
 
 const rules_email = {
   mail: {
-    required: helpers.withMessage("Это поле не может быть пустым", required),
+    required: helpers.withMessage("Это поле не может быть пустым", required)
   }
 }
 
@@ -64,15 +62,6 @@ function toNextStep() {
   <div>
     <Input
       class="auth-form__input"
-      placeholder="Фамилия"
-      type="text"
-      @keyup.enter="toNextStep()"
-      v-model:input-value="authDataStepName.secondname"
-      :state="v_name$?.secondname.$silentErrors.length !== 0 ? 'error' : null"
-      :stateInfo="v_name$?.secondname.$silentErrors"
-    />
-    <Input
-      class="auth-form__input"
       placeholder="Имя"
       type="text"
       @keyup.enter="toNextStep()"
@@ -82,7 +71,7 @@ function toNextStep() {
     />
     <Input
       class="auth-form__input"
-      placeholder="Отчество"
+      placeholder="Фамилия"
       type="text"
       :state="v_name$?.lastname.$silentErrors.length !== 0 ? 'error' : null"
       :stateInfo="v_name$?.lastname.$silentErrors"
@@ -95,8 +84,8 @@ function toNextStep() {
         class="auth-form__input auth-form__input--last"
         placeholder="Email"
         type="email"
-        :state="v_email$?.email?.$silentErrors.length !== 0 ? 'error' : null"
-        :stateInfo="v_email$?.email?.$silentErrors"
+        :state="v_email$?.mail?.$silentErrors.length !== 0 ? 'error' : null"
+        :stateInfo="v_email$?.mail?.$silentErrors"
         v-model:input-value="authDataStepName.mail"
         @keyup.enter="toNextStep()"
       />

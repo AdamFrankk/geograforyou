@@ -26,8 +26,8 @@ import { Icon } from "@/shared/uikit/icons/"
         class="navbar__link"
         :to="{ name: 'test' }"
       >
-        <Icon name="carta" type="navigation" :h="24" :w="24" />
-        <span class="navbar__link-text">Карта</span>
+        <Icon name="hotel" type="navigation" :h="24" :w="24" />
+        <span class="navbar__link-text">Жильё</span>
       </router-link>
       <router-link
         exact-active-class="navbar__link--active"

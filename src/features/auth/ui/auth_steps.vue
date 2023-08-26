@@ -7,7 +7,7 @@ interface Props {
 }
 // Emits and Props
 const props = withDefaults(defineProps<Props>(), {
-  length: 3,
+  length: 2,
   step: 1
 })
 </script>

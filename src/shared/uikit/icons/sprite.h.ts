@@ -13,8 +13,8 @@ export interface SpritesMap {
     | "search"
     | "step-checked"
     | "verify-checked"
-  map: "attraction-mark"
-  navigation: "account" | "carta" | "earth" | "map"
+  map: "attraction-mark" | "hotel-mark" | "restaurant-mark"
+  navigation: "account" | "carta" | "earth" | "hotel" | "map"
 }
 
 export const SPRITES_META: { [K in keyof SpritesMap]: SpritesMap[K][] } = {
@@ -33,6 +33,6 @@ export const SPRITES_META: { [K in keyof SpritesMap]: SpritesMap[K][] } = {
     "step-checked",
     "verify-checked"
   ],
-  map: ["attraction-mark"],
-  navigation: ["account", "carta", "earth", "map"]
+  map: ["attraction-mark", "hotel-mark", "restaurant-mark"],
+  navigation: ["account", "carta", "earth", "hotel", "map"]
 }

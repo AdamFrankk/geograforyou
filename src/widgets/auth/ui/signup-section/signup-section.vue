@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { reactive, ref } from "vue"
 
-import type { AuthDto_Main, AuthDto_Passwords, AuthDto_Role } from "@/features/auth/model"
+import type { AuthDto_Main, AuthDto_Passwords } from "@/features/auth/model"
 import { SignUpForm, SignUpStepName, SignUpStepPasswords } from "@/features/auth/ui/signup-form"
 import type { AuthDto } from "@/shared/api"
 import type { AuthStepsType, AuthType } from "@/shared/api/common"

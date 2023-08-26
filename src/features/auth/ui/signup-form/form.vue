@@ -37,11 +37,6 @@ const { mutate } = useMutation((credentials: AuthDto) => authStore.signUpUser(cr
   }
 })
 // Watchers
-watch(props, (newData) => {
-  if (newData.authStep === 2 || newData.authStep === 3) {
-    errors.value = null
-  }
-})
 // Methods
 function onSubmit() {
   mutate(props.data)
@@ -51,15 +46,11 @@ function onSubmit() {
 
 <template>
   <form class="auth-form" @submit.prevent="onSubmit">
-    <AuthSteps :step="props.authStep" v-if="authStep < 4" />
+    <AuthSteps :step="props.authStep" v-if="authStep < 3" />
     <!-- Первый шаг -->
     <slot name="first_step" v-if="props.authStep === 1"> </slot>
     <!-- Второй шаг -->
     <slot name="second_step" v-else-if="props.authStep === 2"> </slot>
-    <!-- Третий шаг -->
-    <slot name="third_step" v-else-if="props.authStep === 3"> </slot>
-    <!-- Экран после отправки письма -->
-    <slot name="fourth_step" v-else-if="props.authStep === 4 && props.data.role !== null"></slot>
     <span class="auth-form__error-message" v-if="errors">{{ errors.message }}</span>
     <!-- Только на первом шаге -->
     <AuthTerms class="auth-form__text" v-if="props.authStep === 1" />
