@@ -58,7 +58,7 @@ export const useAuthStore = defineStore("authStore", () => {
   const signUpUser = async (user: AuthDto) => {
     await apiInstance.post<AuthResponse>("auth/register", user)
   }
-  const loginUser = async (user: LoginEmailDto, authType: AuthType) => {
+  const loginUser = async (user: LoginEmailDto) => {
     await apiInstance
       .post<AuthResponse>(`auth/authenticate`, user)
       .then((_response) => {

@@ -1,4 +1,4 @@
-import type { AuthDto, AuthStepsType, AuthType, PasswordsDto, UserRole } from "@/shared/api"
+import type { AuthDto, AuthStepsType, AuthType, UserRole } from "@/shared/api"
 
 export interface AuthFormProps {
   authStep: AuthStepsType
@@ -14,7 +14,3 @@ export interface AuthTypeEmits {
 }
 
 export interface AuthDto_Main extends Omit<AuthDto, "password" | "role" | "confirmPassword"> {}
-export interface AuthDto_Passwords extends PasswordsDto {}
-export interface AuthDto_Role {
-  role: UserRole | null
-}

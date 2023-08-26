@@ -2,13 +2,7 @@
 import { reactive, ref } from "vue"
 
 import type { AuthDto_Main, AuthDto_Passwords, AuthDto_Role } from "@/features/auth/model"
-import {
-  SignUpForm,
-  SignUpStepEmailSent,
-  SignUpStepName,
-  SignUpStepPasswords,
-  SignUpStepRole
-} from "@/features/auth/ui/signup-form"
+import { SignUpForm, SignUpStepName, SignUpStepPasswords } from "@/features/auth/ui/signup-form"
 import type { AuthDto } from "@/shared/api"
 import type { AuthStepsType, AuthType } from "@/shared/api/common"
 
@@ -16,7 +10,6 @@ const activeAuthType = ref<AuthType>("email")
 const authStep = ref<AuthStepsType>(1)
 const authData = reactive<AuthDto>({
   firstname: "",
-  secondname: "",
   lastname: "",
   phone: "",
   mail: "",
@@ -27,7 +20,7 @@ const authData = reactive<AuthDto>({
 function changeAuthType(data: AuthType) {
   activeAuthType.value = data
 }
-function fillData(data: AuthDto_Main | Omit<AuthDto_Passwords, "confirmPassword"> | AuthDto_Role) {
+function fillData(data: AuthDto_Main | Omit<AuthDto_Passwords, "confirmPassword">) {
   Object.assign(authData, data)
 }
 </script>

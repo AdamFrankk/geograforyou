@@ -1,16 +1,7 @@
 import type { SpritesMap } from "@/shared/uikit/icons/sprite.h"
 
 export type AuthType = "phone" | "email"
-export type AuthStepsType = 1 | 2 | 3 | 4
-
-export type Country = {
-  id: number
-  title: string
-  name: string
-  mask: string
-  maskRegular: string
-  code: string
-}
+export type AuthStepsType = 1 | 2
 
 export interface PreloaderProps {
   loadingSpeed?: number

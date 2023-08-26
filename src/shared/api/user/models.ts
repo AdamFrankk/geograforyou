@@ -2,7 +2,6 @@ import type { UserRole } from "."
 
 export interface AuthDto {
   firstname: string
-  secondname: string
   lastname: string
   mail: string | null
   phone: string | null
@@ -12,24 +11,6 @@ export interface AuthDto {
 export interface LoginEmailDto {
   mail: string
   password: string
-}
-
-export interface LoginPhoneDto {
-  phone: string
-  password: string
-}
-
-export interface PasswordsDto {
-  password: string
-  confirmPassword: string
-}
-
-export interface ForgetPasswordEmailDto {
-  email: string
-}
-
-export interface ForgetPasswordPhoneDto {
-  phone: string
 }
 
 export interface AuthResponse {
@@ -58,7 +39,6 @@ export interface User {
   id: string
   _id: string
   firstname: string
-  secondname: string
   lastname: string
   phone: string | null
   email: string | null

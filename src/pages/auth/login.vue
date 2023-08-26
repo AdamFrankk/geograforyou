@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { AuthSection } from "@/widgets/auth"
 import { Preloader } from "@/shared/uikit/preloader"
+import { AuthSection } from "@/widgets/auth"
 import { ref } from "vue"
 
 const showAnimation = ref(true)

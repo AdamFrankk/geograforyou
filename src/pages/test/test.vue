@@ -1,13 +1,6 @@
 <script lang="ts" setup>
-import { ref } from "vue"
-
-import { useAuthStore } from "@/entities/session"
-import { Button } from "@/shared/uikit/buttons"
 import { BaseLayout } from "@/widgets/layouts"
 import { YMap } from "@/widgets/map"
-
-const city = ref("Астрахани")
-const authStore = useAuthStore()
 </script>
 
 <template>
