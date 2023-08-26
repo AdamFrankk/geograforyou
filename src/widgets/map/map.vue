@@ -21,6 +21,36 @@ const allMarks = ref<any>([
     }
   },
   {
+    slug: "kreml",
+    id: 1213123123,
+    coordinate: [46.43427, 48.031019],
+    address: "остров Центральный",
+    title: "Астраханский кремль",
+    description: "",
+    images: ["src/app/static/images/places/98y9v8a90y80a8ya.jpg"],
+    options: {
+      iconLayout: "default#image",
+      iconImageHref: "src/app/static/icons/attraction-mark.svg",
+      iconImageSize: [40, 40],
+      iconImageOffset: [-19, -44]
+    }
+  },
+  {
+    slug: "kreml",
+    id: 1213123123,
+    coordinate: [46.31427, 48.033019],
+    address: "остров Центральный",
+    title: "Астраханский кремль",
+    description: "",
+    images: ["src/app/static/images/places/98y9v8a90y80a8ya.jpg"],
+    options: {
+      iconLayout: "default#image",
+      iconImageHref: "src/app/static/icons/attraction-mark.svg",
+      iconImageSize: [40, 40],
+      iconImageOffset: [-19, -44]
+    }
+  },
+  {
     slug: "rozmarin",
     id: 12131423233,
     coordinate: [46.351676, 48.035353],
@@ -39,6 +69,74 @@ const allMarks = ref<any>([
     slug: "karakoy",
     id: 121314232331,
     coordinate: [46.352646, 48.032218],
+    address: "Ульяновыз 1/12/2",
+    title: "Karakoy",
+    description: "Кафе",
+    images: [
+      "https://avatars.mds.yandex.net/get-altay/4737312/2a00000179f1c670d3ab2cac658131ea6463/XXL"
+    ],
+    options: {
+      iconLayout: "default#image",
+      iconImageHref: "src/app/static/icons/restaurant-mark.svg",
+      iconImageSize: [40, 40],
+      iconImageOffset: [-19, -44]
+    }
+  },
+  {
+    slug: "karakoy",
+    id: 121314232331,
+    coordinate: [46.308646, 48.023218],
+    address: "Ульяновыз 1/12/2",
+    title: "Karakoy",
+    description: "Кафе",
+    images: [
+      "https://avatars.mds.yandex.net/get-altay/4737312/2a00000179f1c670d3ab2cac658131ea6463/XXL"
+    ],
+    options: {
+      iconLayout: "default#image",
+      iconImageHref: "src/app/static/icons/restaurant-mark.svg",
+      iconImageSize: [40, 40],
+      iconImageOffset: [-19, -44]
+    }
+  },
+  {
+    slug: "karakoy",
+    id: 121314232331,
+    coordinate: [46.358646, 48.09218],
+    address: "Ульяновыз 1/12/2",
+    title: "Karakoy",
+    description: "Кафе",
+    images: [
+      "https://avatars.mds.yandex.net/get-altay/4737312/2a00000179f1c670d3ab2cac658131ea6463/XXL"
+    ],
+    options: {
+      iconLayout: "default#image",
+      iconImageHref: "src/app/static/icons/restaurant-mark.svg",
+      iconImageSize: [40, 40],
+      iconImageOffset: [-19, -44]
+    }
+  },
+  {
+    slug: "karakoy",
+    id: 121314232331,
+    coordinate: [46.378646, 48.06218],
+    address: "Ульяновыз 1/12/2",
+    title: "Karakoy",
+    description: "Кафе",
+    images: [
+      "https://avatars.mds.yandex.net/get-altay/4737312/2a00000179f1c670d3ab2cac658131ea6463/XXL"
+    ],
+    options: {
+      iconLayout: "default#image",
+      iconImageHref: "src/app/static/icons/restaurant-mark.svg",
+      iconImageSize: [40, 40],
+      iconImageOffset: [-19, -44]
+    }
+  },
+  {
+    slug: "karakoy",
+    id: 121314232331,
+    coordinate: [46.328646, 48.06218],
     address: "Ульяновыз 1/12/2",
     title: "Karakoy",
     description: "Кафе",

@@ -31,7 +31,7 @@ const props = withDefaults(defineProps<ButtonProps>(), {
   @apply bg-primary-color flex justify-center items-center w-full py-[16px] px-[32px] rounded-default;
   @apply text-[16px] text-white text-center leading-[150%] font-normal;
   &:hover {
-    @apply bg-green-600
+    @apply bg-green-600;
   }
   &__icon {
     &--left {
@@ -44,7 +44,7 @@ const props = withDefaults(defineProps<ButtonProps>(), {
   }
   /* Colors */
   &--white {
-    @apply bg-transparent text-primary-color border-solid border-[1px] border-primary-color;
+    @apply bg-white text-primary-color border-solid border-[1px] border-primary-color;
     &:hover {
       @apply bg-cyan-50;
     }
@@ -59,7 +59,7 @@ const props = withDefaults(defineProps<ButtonProps>(), {
   /* Disabled */
   &--disabled,
   &:disabled {
-    @apply opacity-[0.5];
+    @apply opacity-[0.6];
   }
   &:hover:not(:disabled) {
     @apply opacity-[0.9];
