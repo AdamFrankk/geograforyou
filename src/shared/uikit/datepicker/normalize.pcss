@@ -1,0 +1,56 @@
+:deep(.dp__menu) {
+  @apply shadow-[0_10px_30px_0_rgba(70,87,147,0.12)];
+  .dp__arrow_top,
+  .dp__button,
+  .dp__calendar_header_separator {
+    @apply hidden;
+  }
+  .dp__overlay {
+    @apply rounded-default;
+  }
+  .dp__calendar_header {
+    @apply font-normal text-[10px];
+  }
+  .dp__calendar_header_item {
+    @apply items-center flex;
+  }
+  .dp__cell_offset {
+    @apply opacity-0 invisible;
+  }
+  .dp__today {
+    @apply rounded-default;
+  }
+  .dp__month_year_select {
+    @apply font-semibold text-[14px] leading-[21px] text-primary-color;
+  }
+  --dp-font-family: Inter;
+  --dp-font-size: 14px; /*Default font-size*/
+  --dp-row-maring: 0;
+  --dp-border-radius: 8px; /*Configurable border-radius*/
+}
+
+:deep(.dp__theme_light) {
+  --dp-background-color: #ffffff;
+  --dp-text-color: var(--color-secondary);
+  --dp-hover-color: var(--color-cyan-50);
+  --dp-hover-text-color: var(--color-secondary);
+  --dp-icon-color: var(--color-primary);
+  --dp-hover-icon-color: var(--color-primary);
+  --dp-primary-color: var(--color-primary);
+  --dp-primary-text-color: #f8f5f5;
+  --dp-secondary-color: #c0c4cc;
+  --dp-border-color: #ddd;
+  --dp-menu-border-color: #ddd;
+  --dp-border-color-hover: #aaaeb7;
+  --dp-disabled-color: #f6f6f6;
+  --dp-scroll-bar-background: #f3f3f3;
+  --dp-scroll-bar-color: #959595;
+  --dp-success-color: #76d275;
+  --dp-success-color-disabled: #a3d9b1;
+  --dp-danger-color: #ff6f60;
+  --dp-highlight-color: rgba(25, 118, 210, 0.1);
+}
+
+:deep(.dp__theme_dark) {
+  --dp-background-color: #212121;
+}

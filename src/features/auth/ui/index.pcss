@@ -1,0 +1,49 @@
+.auth-form {
+  @apply min-w-[320px] max-w-[100%] mt-[32px];
+  &__tabs {
+    @apply mb-[28px];
+  }
+  &__text {
+    @apply mb-[20px];
+    &--thin {
+      @apply max-w-[75%];
+    }
+    &--medium {
+      @apply max-w-[85%];
+    }
+    &--bold {
+      @apply mb-[8px];
+    }
+    a {
+      @apply font-semibold;
+    }
+  }
+  &__input {
+    @apply mb-[16px];
+    &--code {
+      @apply mb-[12px];
+    }
+    &--last {
+      @apply mb-[32px];
+    }
+  }
+  &__phone {
+    @apply mb-[32px];
+  }
+  &__resend,
+  &__forget-link {
+    @apply text-left mb-[32px];
+  }
+  &__button {
+    @apply mb-[12px];
+  }
+  &__mail-sent {
+    @apply mt-[32px];
+  }
+  &__mail-img {
+    @apply mt-[100px];
+  }
+  &__error-message {
+    @apply text-network-300 text-[14px] leading-[150%] mb-[14px] block;
+  }
+}

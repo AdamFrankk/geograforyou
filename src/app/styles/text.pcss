@@ -1,0 +1,42 @@
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  @apply font-[Inter];
+}
+
+p {
+  @apply text-white text-[16px] font-normal leading-[22px];
+}
+
+h2 {
+  color: #2d3748;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+}
+
+.link {
+  text-decoration-line: underline;
+  @apply text-primary-color font-[Inter] text-[16px] font-normal leading-[24px];
+  &--button {
+    @apply bg-primary-color hover:bg-primary-hover text-white font-bold py-[16px] px-[32px] rounded mb-[28px];
+  }
+  &--semibold {
+    @apply font-semibold;
+  }
+  &--bold {
+    @apply font-bold;
+  }
+  &--mini {
+    @apply text-[12px];
+  }
+  &--no-decoration {
+    text-decoration: none;
+  }
+}

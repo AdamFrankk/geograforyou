@@ -1,0 +1,65 @@
+{
+  "Розмарин": {
+    "response": {
+      "GeoObjectCollection": {
+        "featureMember": [
+          {
+            "GeoObject": {
+              "name": "Эспланадная улица, 4А",
+              "description": "Астрахань, Россия",
+              "boundedBy": {
+                "Envelope": {
+                  "lowerCorner": "48.031247 46.348833",
+                  "upperCorner": "48.039458 46.354519"
+                }
+              },
+              "Point": { "pos": "48.035353 46.351676" }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Karakoy": {
+    "response": {
+      "GeoObjectCollection": {
+        "featureMember": [
+          {
+            "GeoObject": {
+              "name": "улица Ульяновых, 5/11/4",
+              "description": "Астрахань, Россия",
+              "boundedBy": {
+                "Envelope": {
+                  "lowerCorner": "48.028112 46.349804",
+                  "upperCorner": "48.036323 46.355489"
+                }
+              },
+              "Point": { "pos": "48.032218 46.352646" }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Кремль": {
+    "response": {
+      "GeoObjectCollection": {
+        "featureMember": [
+          {
+            "GeoObject": {
+              "name": "остров Центральный",
+              "description": "Астрахань, Россия",
+              "boundedBy": {
+                "Envelope": {
+                  "lowerCorner": "47.995351 46.327032",
+                  "upperCorner": "48.056562 46.356248"
+                }
+              },
+              "Point": { "pos": "48.026621 46.345263" }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.sm-input {
+  @apply relative;
+  /* States */
+  &.disabled {
+    .sm-input__body:hover {
+      @apply bg-color-grey-50 border-color-grey-30;
+    }
+  }
+  &--error {
+    .sm-input__body,
+    .sm-input__body:hover {
+      @apply bg-network-50 border-network-100;
+    }
+  }
+  &--success {
+    .sm-input__body,
+    .sm-input__body:hover {
+      @apply bg-green-50 border-green-100;
+    }
+  }
+  /* Sizes */
+  &--small {
+    .sm-input__body {
+      @apply min-h-[48px];
+    }
+    .sm-input__input {
+      @apply max-h-[48px];
+    }
+  }
+  &--extrasmall {
+    .sm-input__body {
+      @apply min-h-[40px];
+    }
+    .sm-input__input {
+      @apply max-h-[40px];
+    }
+  }
+  /* Types */
+  &--textarea {
+    .sm-input__body {
+      @apply min-h-[200px] max-h-[200px];
+    }
+    textarea {
+      @apply min-h-[190px] max-h-[200px] resize-none py-[13px] pr-[20px];
+    }
+  }
+  /* Контентная часть */
+  &__body {
+    @apply flex items-center justify-start relative;
+    @apply bg-color-grey-50  min-h-[56px] max-h-[56px] rounded-[8px] border-color-grey-30 border-[1px] border-solid;
+    &:hover {
+      @apply bg-color-grey-100 border-color-grey-300;
+    }
+  }
+  &__field {
+    @apply w-full;
+  }
+  /* &__label {
+  } */
+  &__input {
+    @apply py-[10px] pl-[20px] pr-[60px] h-[56px] w-full text-[16px] font-normal leading-[30px];
+    &:disabled {
+      @apply text-color-grey-40 cursor-not-allowed;
+      &::placeholder {
+        @apply text-color-grey-300;
+      }
+    }
+    &:-internal-autofill-selected,
+    &:-webkit-autofill {
+      @apply w-[calc(100%+2px)] left-[-1px] top-[-1px] absolute h-[calc(100%+2px)] rounded-[8px];
+      @apply bg-yellow-50 border-[1px] border-solid border-yellow-100 shadow-[inset_0_0_0_50px] shadow-yellow-50;
+    }
+  }
+  &__eye {
+    @apply absolute right-[20px];
+  }
+  &__eye-icon {
+    @apply fill-color-grey-40 cursor-pointer;
+    &:hover {
+      @apply fill-secondary-color;
+    }
+  }
+  &__right-icon {
+    @apply absolute right-[20px];
+  }
+  &__bottom {
+    @apply text-left font-normal text-[14px] leading-[150%] mt-[4px];
+  }
+  &__error {
+    @apply text-network-300;
+  }
+  &__description {
+    @apply text-color-grey-500;
+  }
+}
